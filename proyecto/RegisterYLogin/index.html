@@ -1,0 +1,84 @@
+<?php
+   session_start();
+
+   if(!isset($_SESSION['usuario'])){
+       header("location: InterfazLogin/index.html");
+   }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login || Registro</title>
+    <link rel="shortcut icon" href="imag/LOGO.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" class="icon-profile">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
+</head>
+
+<header class ="header">
+    <div class ="container">
+        <h1 class="title">¡BIENVENIDO!</h1>
+        <a href="../index.html">Inicio</a>
+    </div>
+
+</header>
+
+<body>
+
+        <main>
+
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+
+                
+                <div class="contenedor__login-register">
+                    
+                    
+                    <h3>Inicio de Sesión</h3>
+
+                   <form action="Login/login.php" method="POST" class="formulario__login">
+                    <img src="imag/user2.jpg" alt="User">
+
+                        <h2>Iniciar Sesión</h2>
+                        <span class="icon-user"></span><input type="email" name="email" placeholder="Correo Electronico">
+                        <span class="icon-key2"></span><input type="password" name="password" placeholder="Contraseña">
+                        <br><br><a href="" class="he">¿Olvidaste la contraseña?</a> <br>
+                        <button>Entrar</button>
+                    </form>
+
+                    
+                    <form action="Registro/registrar.php" method="POST" class="formulario__register">
+                        <img src="imag/user2.jpg" alt="User">
+                        <h2>Regístrarse</h2>
+                        <span class="icon-user"></span><input type="name" name="name" placeholder="Nombre completo">
+                        <span class="icon-mail"></span><input type="email" name="email" placeholder="Correo Electronico">
+                        <span class="icon-user-tie"></span><input type="user" name="user" placeholder="Usuario">
+                        <span class="icon-key2"></span><input type="password" name="password" placeholder="Contraseña">
+                        
+                        <button>Registrar</button>
+                    
+                    </form>
+                    
+                </div>
+                
+        </main>
+        
+        <script src="assets/js/script.js"></script>
+</body>
+</html>

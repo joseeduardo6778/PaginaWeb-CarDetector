@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lemongrass Caps Regular' ,Italic;
+}
+
+header{
+    width: 100%;
+    color: #fff;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0,.3);
+}
+header h1{
+  margin-left: 580px;
+  margin-right: 300px;
+  font-family: 'Montserrat Alternates',sans-serif;
+  font-size: 26px;
+  align-items: center;
+  align-content: center;
+}
+header a{
+  margin-right: 50px;
+  font-family: 'Montserrat Alternates',sans-serif;
+  text-align: right;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  transition: all ease 300ms;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+header a:hover{
+  color: rgb(180, 210, 212);
+}
+body{
+    background-image: url(../../imag/header-cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0,.3);
+
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.contenedor__login-register form span{
+    margin-right:0px;
+    background-color: rgba(255, 255, 255,.6);
+    color: #000;
+    border:solid 7px rgba(255, 255, 255,.01);
+    border-bottom: solid 9.5px rgba(255, 255, 255,.01);
+    border-top: solid 9px rgba(255, 255, 255,.01);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+.contenedor__login-register img{
+
+    margin-top: -100%;
+    margin-bottom: 30px;
+    width: 25%;
+    border-radius: 70%;
+    margin-left: 125px;
+    border: solid #fff 5px;
+  }
+  .he{
+    text-decoration: none;
+    text-align: right;
+    color: #000;
+    font-size: 18px;
+    transition: all 300ms ease;
+  }
+  .he:hover{
+    color: #46A2FD;
+  }
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: rgb(247, 247, 247);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #F6BE38;
+}
+
+.contenedor__login-register form input{
+    width: 90%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: rgb(202, 202, 202);
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="submit"] {
+
+padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    margin-left: 29%;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+input[type="submit"]:hover{
+    width: 100%;
+    margin-left: 0%;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    margin-left: 29%;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+
+.contenedor__login-register form button:hover{
+    width: 100%;
+    margin-left: 0%;
+  }
+  .contenedor__login-register form button:active{
+    background-color: rgba(255, 255, 255,0.2);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+.contenedor__login-register form button:focus{
+    background-color: rgba(255, 255, 255,0.2);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+
+
+
